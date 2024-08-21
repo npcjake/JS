@@ -1,0 +1,115 @@
+LESSON 1: 
+
+    (basic) What is JS: 
+        - used to create websites 
+    HTML creates the content: buttons, text, images
+    CSS changes the appearence - makes it look nice
+    JS:
+        - Makes the website interactive; clickable buttons and such
+        - adds products to the cart, etc.. creates order, etc.. 
+        - givevs instruction to computer
+        - computer follows instructions
+
+    alert('') - gives popup alert box with message in ()
+    always use ; just like in java 
+
+    JS console does math - just like any other
+    Case sensitive 
+
+    document.body.innerHTML = 'hello' --- will modify the webpage do just say 'hello'
+
+    JS modifies websites - biggest point
+
+LESSON 2 - Numbers and Math:
+    * = multiply
+    / = division
+    can handle decimal 
+    follows order of operations
+    operator precedence
+    how to round a number:
+        Math.round()
+
+LESSON 3 - STRINGS:
+    can add strings together with + 
+    numbers/strings are types of values
+    typeof will show type
+    javascript adds from left to right
+    '$' + 20.95 + 7.99 will first convert to string and combine
+    3 ways to create string: 
+        - ' ' (use by default)
+        - " " (use if single quote in string)
+        - Escape Character - \'
+            "I\'m learning JavaScript"
+            \n = newline Character
+            Interpolation - `Items (${1 + 1}): $${(2095 + 799) / 100}`
+            inserts values into strings
+            ${}
+            ` ` = template string == more features but ' ' is default 
+
+LESSON 4 - HTML/CSS/JS implementation: 
+    HTML - Hyper Text Markup Language
+         - write inside of a file using VScode
+         <button></button> = creates button in HTML
+         ^^ called an element: <> html tag </>
+         newlines count as spaces 
+         any # of spaces is only one space 
+    
+        - <head> </head> == where you store the attributes of the html 
+        - <body> </body> == where you store the visible things on the website
+
+    CSS - cascading style sheets
+        - changes the style of any element
+
+LESSON 5 - VARIABLES: 
+    - don't need to declare the type
+    - start with 'let' 
+        let variable1 = 3;
+    - name restrictions: 
+        -cant use special words like: 
+            -let
+        -cant start with number
+        -cant use speical characters except: 
+            $ or _
+    - don't use let when reassigning
+    - const == can't change the value of the variable1
+    - var == has some issues and dont use it in js anymore
+
+LESSON 6 - Booleans/If statements: 
+    - true/false
+    - syntax rules for boolean: 
+        - write true/false
+        - === equal to
+        - == equal to but will convert to same type (5 == "5.0") - not a good idea because you don't want it to convert, so always use triple equals 
+        - !== not eqaul to, dont use !=
+        - comparison operators have lower priority than math operators
+    
+    - if/else very similar to java: 
+        - don't need curly if only one line
+        - else if 
+
+    -Math.random() will randomly choose a number between 0 <= # < 1 
+    - {} provides a scope to get rid of naming confilcts
+    - var doesn't follow scope: 
+        - conflicts with names
+    -truthy/falsey values: 
+        - false: 0 '' NaN undefined null
+        -      const cartQuantity = 0;
+      if(cartQuantity){
+        console.log('Cart has products');
+      }
+      else{
+        console.log('Cart is empty');
+      }
+
+
+      console.log('text'/5); //NaN
+      let variable1;
+      console.log(variable1); //undefined (must be with let)
+
+    - turnary operator: acts as a if/else with boolean
+
+- LESSON 7 FUNCTIONS:
+    -done
+
+- LESSON 8 OBJECTS:
+    -

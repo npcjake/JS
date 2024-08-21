@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    <script> 
+    /*
+     const product = {
+        name: 'socks',
+        price: 1090      
+     }
+
+     console.log(product);
+     console.log(product.name); 
+     console.log(product.price);
+
+     product.name = 'cotton socks';
+     console.log(product.name);
+     console.log(product);
+
+     product.newProperty = true;
+     console.log(product);
+
+     delete product.newProperty;
+     console.log(product);
+
+     
+      Syntax rules: 
+        -code on left of is called property
+        -property value pair
+        -seperate with comma
+        -dot notation allows you to acces a property
+          - also allows you to change the product with = 
+          - also allows you to add
+          - also allows you to delete
+
+      Why use them? 
+        -objects make the code organized 
+        -allow us to use multiple values together
+          -no need to console log each item individual
+        
+     
+      const product2 = {
+        name: 'shirt',
+        'delivery-time': '1 day',
+        rating:{ //nested object
+          stars: 4.5,
+          count: 87 
+        },
+        fun: function function1(){ // method
+          console.log('function inside object');
+        }
+      }
+      
+      console.log(product2['name']); //bracket notation same as dot
+      console.log(product2['delivery-time']);
+      console.log(product2.fun());
+
+
+      console.log(JSON.stringify(product2)); //stringify results in a string JS object to JSON object conversion 
+
+      const jsonString = JSON.stringify(product2);
+      console.log(JSON.parse(jsonString)); // JSON to JS object conversion
+      
+        when to use bracket notation: 
+          - when there are - in the name
+        which should we use?
+          - dot notation by default 
+          - if needing to use properties that dont work with dot, use bracket 
+        
+        methods are within objects: 
+          - with console.log() - console is an object, log is a function - makes a method 
+          - with Math.random() - Math is an object - random() is a function - method
+        
+        console/math are BUILT IN objects - provided by JS 
+
+        - 2 more objects - JSON and Built in storage
+
+        JSON - JavaScript Object Notation: 
+          - a syntax 
+          - similar to js object
+          - has less features
+          - must use ""
+          - does not allow functions!
+          - WHY use JSON?
+            - JSON can be understood by almost every language, JSON is more universal 
+            - Use JSON when sending data between computers that might use other languages 
+            - Use JSON for storage!!!!!! 
+
+        Local Storage: 
+          - normally, when you refresh the page, variables are reset back to their normal state when they run the code 
+          - When you need values saved, even when you refresh the page, you need local storage! 
+          - Only supports strings
+      */ 
+      
+      console.log('hello'.length);
+      console.log('hello'.toUpperCase())
+
+      const object1 = {
+        message: 'hello'
+      };
+
+      const object2 = object1; //makes a copy of the reference
+      //Copy by reference
+
+      object1.message = 'Good Job!'; //changes the value even tho const because you can still access the reference
+      console.log(object1);
+      console.log(object2); //still shows the change even tho its object1 because its just a reference
+
+      const object3 = {
+        message: 'Good Job!'
+      }
+
+      console.log(object3 === object1); //not equal because they are two different references. 
+      console.log(object2 === object1); //equal because we made them the same reference above. 
+
+      const object4 = {
+        message: 'Good Job!',
+        price: 799
+      }
+
+      //const message = object4.message;
+
+      const { message, price } = object4; //called destruction. takes the properties out of the object and saves to message/price. 
+
+      console.log(price,message);
+
+      const object5 = {
+        //message: message
+        message, //SHORTHAND property
+        //method: function function1(){
+        //  console.log('method');
+        //} SHORTHAND METHOD
+        method(){
+          console.log('method');
+        }
+      }
+
+      console.log(object5)
+      object5.method();
+
+      /*
+        Auto Boxing: 
+          - when typing a string, JS creates a special object 
+          to allow you to use properties like length
+          - Also works with other types of values 
+            like numbers and boolean 
+
+        Objects Continued: 
+          - Objects are references
+          - first stored in memory, 
+          and then directed to that place by the variable
+
+      */
+    </script>
+  </body>
+</html>
